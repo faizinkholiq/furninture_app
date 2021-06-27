@@ -19,6 +19,12 @@ class MyApp extends StatelessWidget {
         // Here we set DM Sans as our default fonts
         // Now we also apply out text color to all flutter textTheme
         textTheme: GoogleFonts.dmSansTextTheme().apply(displayColor: kTextColor),
+        // Almost all of our app have  this style
+        appBarTheme: AppBarTheme(
+          color: Colors.transparent,
+          elevation: 0,
+          brightness: Brightness.light,
+        ),
         primarySwatch: Colors.blue,
       ),
       home: HomeScreen(),

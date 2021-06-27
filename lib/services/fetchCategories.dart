@@ -16,8 +16,11 @@ Future<List<Category>> fetchCategories() async {
       .toList();
     
     // it return list of categories
+    print("test");
+    print(categories);
     return categories;
   }else{
+    print("test");
     // If the server did not return a 200 OK response
     // then throw an exception.
     throw Exception('Failed to load');
